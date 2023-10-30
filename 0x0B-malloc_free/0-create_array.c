@@ -6,7 +6,7 @@
  *                initializes it with a specific char.
  * @size: The size of the array to be initialized.
  * @c: The specific char to intialize the array with.
- *
+
  * Return: checking all cases and returning the created array
  */
 char *create_array(unsigned int size, char c)
