@@ -7,13 +7,12 @@
  * @size: The size of the array to be initialized.
  * @c: The specific char to intialize the array with.
  *
- * Return: If size == 0 or the function fails - NULL.
- *         Otherwise - a pointer to the array.
+ * Return: checking all cases and returning the created array
  */
 char *create_array(unsigned int size, char c)
 {
 	char *array;
-	unsigned int index;
+	unsigned int i;
 
 	if (size == 0)
 		return (NULL);
@@ -23,8 +22,8 @@ char *create_array(unsigned int size, char c)
 	if (array == NULL)
 		return (NULL);
 
-	for (index = 0; index < size; index++)
-		array[index] = c;
+	for (i = 0; i < size; i++)
+		array[i] = c;
 
 	return (array);
 }
